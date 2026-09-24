@@ -1,0 +1,7 @@
+# Runtime parameters loaded by AgentRegistry and passed as Graph(config=...).
+# Static manifest fields (name/version/class/requires) live in agent.yaml.
+
+max_retry: 3
+top_k: 5
+jurisdiction_profile: jp_fiea_37_3
+timeout_s: 30

@@ -1,0 +1,19 @@
+# Agent Manifest - AgentRegistry static entry point.
+# Root-level keys only; `class` is a single dotted import path.
+# Runtime-tunable parameters live in config/config.yaml, not here.
+
+id: FIN-C2-070
+name: Financial Advisory Call Compliance & Suitability Check Agent
+namespace: fin
+version: 0.1.0
+enabled: true
+description: Financial Advisory Call Compliance & Suitability Check Agent
+class: src.graph.graph.AdvisoryCallComplianceGraph
+category: Cat 2
+industry: FIN
+base_type: VectorRAGAgent
+generation_mode: deterministic
+required_trust_level: VERIFIED_EXTERNAL
+requires:
+  secrets: []
+  extras: []
